@@ -69,7 +69,7 @@
 									</div>
 								</div>
 								<div id="qrcode"></div>
-								
+								<div class="qframe-close" title="关闭">✖</div>
 							</div>
 						</div>
 						<script>
@@ -140,6 +140,10 @@
 								}
 								$('.refresh').click(get_code);
 								$('#cookietools').click(get_code);
+								$('.qframe-close').click(function () {
+                                                                       $("#qrcontainer").addClass("hidden");
+                                                                       $("#refresh_qrcode").addClass("hidden");
+                                                                });
 							});
 						</script>
 
